@@ -167,7 +167,7 @@ def bestPlay(board, ppCords, test=False):
 			for i in range(len(bestMove[0]['previous'])):
 				mouse_glide_to(ppCords[0] + 116 + bestMove[0]['previous'][i][1]*45 + random.randint(5,10) , ppCords[1] + 87 + bestMove[0]['previous'][i][0]*45 + random.randint(-5,5))
 				pyautogui.click()
-				time.sleep(.25)
+				time.sleep(1)
 				return
 	# for i in range(len(bestMove)):
 	# 	if (bestMove[i]['best'] >= 3):
